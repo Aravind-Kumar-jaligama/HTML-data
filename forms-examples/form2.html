@@ -4,74 +4,74 @@
     <title>Form2</title>
 </head>
 <body>
-        <form>
+        <form action="servlets" name="Registration Form" method="post">
             <center>
-             <table>
+             <table cellpadding="8px" bgcolor="#9E8E8E">
                 <caption><font size="5px"><b><u>Registration Form</u></b></font></caption>
                 <tr>
                     <td>
-                        <label for="name">First Name</label>
+                        <label for="A1">First Name</label>
                     </td>
-                    <td><input type="text">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="name">Last Name</label>
-                    </td>
-                    <td><input type="text">
+                    <td><input type="text" id="A1" name="FirstName" placeholder="your name" required>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label for="name">Nick Name</label>
+                        <label for="A2">Last Name</label>
                     </td>
-                    <td><input type="text">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="Email">e-mail</label>
-                    </td>
-                    <td><input type="email"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="password">password</label>
-                    </td>
-                    <td><input type="password"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="Date">Date of Birth</label>
-                    </td>
-                    <td><input type="date">
+                    <td><input type="text" id="A2" name="LastName" placeholder="surname" required>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label>Gender</label>
+                        <label for="A3">Nick Name</label>
                     </td>
-                    <td>
-                        <input type="radio" value="Male">Male
-                    <input type="radio" value="Female">Female
-                    <input type="radio" value="others">others
+                    <td><input type="text" id="A3" name="Nickname" placeholder="Nick Name">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label for="number">Mobile</label>
+                        <label for="A4">e-mail</label>
                     </td>
+                    <td><input type="email" id="A4" name="email"required placeholder="yourname@gmail.com"></td>
+                </tr>
+                <tr>
                     <td>
-                        <input type="number">
+                        <label for="A5" >password</label>
+                    </td>
+                    <td><input type="password" id="A5" name="password" placeholder="Min 8 character with @#%*^"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="A6">Date of Birth</label>
+                    </td>
+                    <td><input type="date" id="A6" required>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label>Address</label>
+                        <label for="A7">Gender</label>
                     </td>
                     <td>
-                        <textarea rows="5" cols="20"></textarea>
+                        <input type="radio" value="Male" id="A7" name="Gender">Male
+                    <input type="radio" value="Female" id="A8" name="Gender">Female
+                    <input type="radio" value="others" id="A9" name="gender">others
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="A10">Mobile</label>
+                    </td>
+                    <td>
+                        <input type=" phone number" id="A10" name="Phone Number" placeholder="contact number" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="A11">Address</label>
+                    </td>
+                    <td>
+                        <textarea rows="5" cols="20" id="A11" name="Address" placeholder="h:no, street,colony,landmark city state."></textarea>
                     </td>
                 </tr>
                 <tr>

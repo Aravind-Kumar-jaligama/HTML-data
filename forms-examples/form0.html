@@ -4,63 +4,70 @@
     <title>Form0</title>
 </head>
 <body>
-    <form>
-        <h2>Registration Form</h2>
-        <table>
-            <tr>
-                <td>
-                    <label>First Name</label>
-                    <br>
-                    <input type="text">
-                </td>
-                <td>
-                    <label>Last Name</label>
-                    <br>
-                    <input type="text">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label>Birthday</label>
-                    <br>
-                    <input type="date">
-                </td>
-                <td>
-                    <label>Gender</label><br>
-                    <input type="radio" value="Male">Male
-                    <input type="radio" value="Female">Female
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label>Email</label><br>
-                    <input type="email">
-                </td>
-                <td>
-                    <label>Phone Number</label><br>
-                    <input type="number">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label>Subject</label>
-                    <select name="Subject" id="subject">
-                        <option value="choose option">choose option</option>
-                        <option value="Telugu">Telugu</option>
-                        <option value="Hindi">Hindi</option>
-                        <option value="English">English</option>
-                        <option value="Maths">Maths</option>
-                        <option value="Science">Science</option>
-                        <option value="Social">Social</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="submit" value="submit">
-                </td>
-            </tr>
-        </table>
-    </form>
+        <form action="MyServlet" name="Registration Form" method="get">
+            <!--<h2>Registration Form</h2>-->
+            <center>
+            <table cellpadding="8px" bgcolor="gray">
+                <h2>Registration Form</h2>
+                <tr>
+                    <td>
+                        <label for="f1">First Name</label>
+                        <br>
+                        <input type="text" id="f1" name="first Name" placeholder="First Name" required>
+                    </td>
+                    <td>
+                        <label for="f2">Last Name</label>
+                        <br>
+                        <input type="text" id="f2" name="Last Name" placeholder="Last Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="f3">Birthday</label>
+                        <br>
+                        <input type="date" id="f3" name="Birthday date" placeholder="DOB" required >
+                    </td>
+                    <td>
+                        <label for="f4">Gender</label>
+                        <br>
+                        <input type="radio" id="f4" name="Gender" value="Male">Male
+                        <input type="radio" id="f5" name="Gender" value="Female">Female
+                        <input type="radio" id="f6" name="Gender">Others
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="f7">Email</label><br>
+                        <input type="email" id="f7" name="E-mail" placeholder="yourname@gmail.com" required>
+                    </td>
+                    <td>
+                        <label for="f8">Phone Number</label>
+                        <br>
+                        <input type="phone number" id="f8" name="MobileNumber" required placeholder="MobileNumber">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="f9">Subject</label>
+                        <br>
+                        <select name="Subject" id="f9" required>
+                            <option value="choose option">choose option</option>
+                            <option value="Telugu">Telugu</option>
+                            <option value="Hindi">Hindi</option>
+                            <option value="English">English</option>
+                            <option value="Maths">Maths</option>
+                            <option value="Science">Science</option>
+                            <option value="Social">Social</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="submit">
+                    </td>
+                </tr>
+            </table>
+        </center>
+        </form>
 </body>
 </html>
