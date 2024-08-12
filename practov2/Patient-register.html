@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Homepage</title>
+</head>
+<body>
+    <header>
+       <center><img src="practovlogo.jpg" alt="practologo" heighr="120px" width="180px"></center>
+    <p align="center">
+       <a href="home.html" target="_self">Home</a>&nbsp;
+       |
+       <a href="doctors.html" target="_self">Doctors</a>
+       |
+       <a href="branches.html" target="_self">Branches</a>
+       |
+       <a href="doctor-register.html" target="_self">Doctor SignUp</a>
+       |
+       <a href="doctor-login.html" target="_self">Doctor Sign in</a>
+       |
+       <a href="#" target="_self">Patient SignUp</a>
+       |
+       <a href="patient-login.html" target="_self">patient Sign in</a>
+    </p>
+    </header>
+    <hr color="blue">
+    <br><br><br>
+    <form action="my servlet" method="get" name="Patient registration">
+        <center>
+            <table cellpadding="8px" cellspacing="5px" bgcolor="gray">
+                <h2>Registration Form</h2>
+                <tr>
+                    <td>
+                        <label for="f1">Full Name</label>
+                        <br>
+                        <input type="text" id="f1" name="Full Name" placeholder="Full Name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="f2">Mobile Number</label>
+                        <br>
+                        <select name="country code" id="f3">
+                            <option value="+91">+91(India)</option>
+                            <option value="+1">+1 (USA)</option>
+                            <option value="+44">+44 (UK)</option>
+                            <option value="+61">+61 (Australia)</option>
+                            <option value="+81">+81 (Japan)</option>
+                            <option value="+49">+49 (Germany)</option>
+                            <option value="+33">+33 (France)</option>
+                        </select>
+                        &nbsp;&nbsp;
+                        <input type="tel" id="f2" name="Mobile Number" placeholder="Mobile Number" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="f4">Create Password</label>
+                        <br>
+                        <input type="password" id="f4" name="Password" placeholder="password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" value="Receive relevant offers and promotional communication from Practo" id="f5">Receive relevant offers and promotional <br>&nbsp; &nbsp;&nbsp;&nbsp;communication from Practo
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <input type="submit" value="Patient SignUp">
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </form>
+    <br><br><br>
+    <hr color="blue">
+    <footer>
+       <center> <h2>copyright@aravind</h2></center>
+    </footer>
+</body>
+</html>
